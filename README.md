@@ -1,25 +1,23 @@
 # study-timer-app2
 집중력 향상 타이머 앱 프로젝트
+```mermaid
 graph TD
-    subgraph A["입력 및 실행 모듈"]
-        A1["start_timer 함수"]
-        A2["record_interruption 함수"]
-        A3["stop_timer 함수"]
+    subgraph B_데이터_처리_및_분석_모듈
+        B1[calculate_focus_score 함수]
+        B2[analyze_pattern 함수]
     end
 
-    subgraph B["데이터 처리 및 분석 모듈"]
-        B1["calculate_focus_score 함수"]
-        B2["analyze_pattern 함수"]
+    subgraph C_보상_및_출력_모듈
+        C1[award_points 함수]
+        C2[display_aquarium 함수]
     end
 
-    subgraph C["보상 및 출력 모듈"]
-        C1["award_points 함수"]
-        C2["display_aquarium 함수"]
-    end
-
-    D["struct StudySession"]
-    E["struct Interruption"]
-    F["struct UserProfile"]
+    D[struct StudySession]
+    E[struct Interruption]
+    F[struct UserProfile]
+    A1[사용자 입력 처리 함수]
+    A2[타이머 제어 함수]
+    A3[데이터 로드 함수]
 
     A1 --> D
     A2 --> E
