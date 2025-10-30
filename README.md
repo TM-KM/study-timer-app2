@@ -2,12 +2,12 @@
 집중력 향상 타이머 앱 프로젝트
 ```mermaid
 graph TD
-    subgraph 데이터_처리_및_분석_모듈
+    subgraph 데이터 처리 및 분석 모듈
         B1[calculate_focus_score 함수]
         B2[analyze_pattern 함수]
     end
 
-    subgraph 보상_및_출력_모듈
+    subgraph 보상 및 출력 모듈
         C1[award_points 함수]
         C2[display_aquarium 함수]
     end
